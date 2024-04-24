@@ -2,10 +2,11 @@
   "name": "rl-mafia-discord-bot",
   "version": "1.0.0",
   "description": "A simple rocket league mafia bot for discord that runs in node.js",
+  "type": "module",
   "main": "main.ts",
   "scripts": {
-    "bot": "node main.ts",
-    "test": "test"
+    "bot": "node dist/main.js",
+    "dev": "npx tsc -w"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "eslint": "^9.1.1",
+    "tsc": "^2.0.4",
     "typescript": "^5.4.5"
   }
 }

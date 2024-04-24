@@ -1,0 +1,34 @@
+{
+  "name": "rl-mafia-discord-bot",
+  "version": "1.0.0",
+  "description": "A simple rocket league mafia bot for discord that runs in node.js",
+  "main": "main.ts",
+  "scripts": {
+    "bot": "node main.ts",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rettrich/rl-mafia-discord-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "rocket",
+    "league",
+    "mafia",
+    "bot"
+  ],
+  "author": "rettrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rettrich/rl-mafia-discord-bot/issues"
+  },
+  "homepage": "https://github.com/rettrich/rl-mafia-discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.12.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.1.1",
+    "typescript": "^5.4.5"
+  }
+}

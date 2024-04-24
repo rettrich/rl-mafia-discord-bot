@@ -1,5 +1,6 @@
 import {
-  CommandInteraction,
+  CacheType,
+  ChatInputCommandInteraction,
   GuildMember,
   SlashCommandBuilder,
 } from "discord.js";
@@ -41,7 +42,7 @@ export default {
   data: new SlashCommandBuilder()
     .setName("mafia")
     .setDescription("Starts a new game with all people in the voice chat."),
-  async execute(interaction: CommandInteraction) {
+  async execute(interaction: ChatInputCommandInteraction<CacheType>) {
     // Check if the user is in a voice channel
     const member = interaction.member as GuildMember;
     if (!member || !member.voice.channel) {
